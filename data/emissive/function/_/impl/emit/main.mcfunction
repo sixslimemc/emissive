@@ -1,6 +1,8 @@
 # IMPL > emissive:emit
 # main
 
-scoreboard players operation *x _emissive = @s emissive.level
-scoreboard players set *y _emissive 0
-execute align xyz if score @n[type=marker,]
+scoreboard players operation *emit.id _emissive = @s _emissive.id
+scoreboard players operation *emit.level _emissive = @s emissive.level
+
+execute align xyz as @n[type=marker,tag=_emissive.source,distance=0..0.1] if score @s _emissive.emitting >= *emit.level _emissive unless score @s _emissive.id = *emit.id _emissive run return 1
+

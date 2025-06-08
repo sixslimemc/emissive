@@ -1,9 +1,9 @@
-#> emissive:_/light/main
+#> emissive:_/source/main
 #--------------------
 # _/tick AS [emit source]
 #--------------------
 
-execute unless block ~ ~ ~ minecraft:light run return 0
+execute unless block ~ ~ ~ #emissive:_/valid_sources run return run function emissive:_/light/terminate/trigger
 
 tag @s add _emissive.checking
 scoreboard players reset *keep _emissive
@@ -13,7 +13,4 @@ tag @s remove _emissive.checking
 
 execute if score *keep _emissive matches 1 run return 0
 
-execute if block ~ ~ ~ minecraft:light[waterlogged=true] run setblock ~ ~ ~ water[level=0]
-execute if block ~ ~ ~ minecraft:light[waterlogged=false] run setblock ~ ~ ~ air
-kill @s
-
+function emissive:_/light/terminate/trigger
