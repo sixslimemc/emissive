@@ -1,0 +1,10 @@
+{
+    light_passthrough: {
+        max_distance: int
+            = 2
+            #
+        do_shapes: bool
+            = true
+            # whether not light passthrough accounts for block shapes like stair/slab direction to emulate real behavior.
+    }
+}
