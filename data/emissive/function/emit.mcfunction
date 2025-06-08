@@ -1,0 +1,17 @@
+#> emissive : emit
+# % AS AT [emit source]
+#--------------------
+# .
+#--------------------
+# .
+#--------------------
+# TODO: description
+#--------------------
+# 1.
+#--------------------
+
+execute unless block ~ ~ ~ #emissive:_/passthrough run return 1
+
+function emissive:_/impl/emit/main
+
+return 1
