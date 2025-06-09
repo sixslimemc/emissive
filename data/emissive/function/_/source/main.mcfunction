@@ -3,7 +3,7 @@
 # _/tick AS [emit source]
 #--------------------
 
-execute unless block ~ ~ ~ #emissive:_/valid_sources run return run function emissive:_/source/emit/trigger
+execute unless block ~ ~ ~ #emissive:_/valid_sources run return run function emissive:_/source/terminate/trigger
 
 tag @s add _emissive.checking
 scoreboard players reset *keep _emissive
@@ -13,4 +13,4 @@ tag @s remove _emissive.checking
 
 execute if score *keep _emissive matches 1 run return 0
 
-function emissive:_/source/emit/trigger
+function emissive:_/source/terminate/trigger
