@@ -1,6 +1,6 @@
 {
     "values": [
-        "#emissive:full_passthrough",
+        "#emissive:full_transparency",
         "#emissive:open_bottom",
         "#emissive:open_sides",
         "#emissive:open_top",
