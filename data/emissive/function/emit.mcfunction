@@ -10,6 +10,6 @@
 # 1.
 #--------------------
 
-function emissive:_/impl/emit/main
+execute align xyz run function emissive:_/impl/emit/main
 
 return 1
