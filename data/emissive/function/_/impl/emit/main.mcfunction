@@ -4,6 +4,8 @@
 execute unless score @s emissive.level matches 0..15 run return 0
 execute unless block ~ ~ ~ #emissive:_/valid_sources run return 0
 
+execute unless score @s _emissive.id matches -2147483648..2147483647 run function emissive:_/impl/emit/assign_id
+
 scoreboard players operation *emit.id _emissive = @s _emissive.id
 scoreboard players operation *emit.level _emissive = @s emissive.level
 
