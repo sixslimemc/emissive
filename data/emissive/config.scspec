@@ -1,5 +1,5 @@
 {
-    light_passthrough: {
+    passthrough: {
         max_distance: int
             = 2
             #
