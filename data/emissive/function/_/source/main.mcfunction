@@ -7,7 +7,7 @@ execute unless block ~ ~ ~ #emissive:_/valid_sources run return run function emi
 
 scoreboard players set *y _emissive 0
 scoreboard players operation *x _emissive = @s _emissive.id
-execute as @e[type=marker, tag=_emissive.proxy, distance=0..0.1] at @s if score @s _emissive.id = *x _emissive run scoreboard players set *y _emissive 1
+execute as @e[type=marker, tag=_emissive.proxy, distance=..0.1] at @s if score @s _emissive.id = *x _emissive run scoreboard players set *y _emissive 1
 
 execute if score *y _emissive matches 1 run return 0
 

@@ -14,6 +14,6 @@ scoreboard players operation *emit.id _emissive = @s _emissive.id
 execute summon marker run function emissive:_/impl/emit/proxy
 
 scoreboard players reset *emit.ignore _emissive
-execute as @n[type=marker,tag=_emissive.source,distance=0..0.1] run return run function emissive:_/impl/emit/existing
+execute as @n[type=marker,tag=_emissive.source,distance=..0.1] run return run function emissive:_/impl/emit/existing
 
 execute summon marker run function emissive:_/impl/emit/new
