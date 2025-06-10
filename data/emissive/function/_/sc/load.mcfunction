@@ -9,10 +9,6 @@ scoreboard objectives add _emissive dummy
 scoreboard objectives add _emissive.emitting dummy
 scoreboard objectives add _emissive.id dummy
 
-execute if score *installed _emissive matches 1 run return 1
+execute unless score *installed _emissive matches 1 run function emissive:_/init
 
-scoreboard players set *installed _emissive 1
-
-data remove storage emissive:config passthrough
-data modify storage emissive:config passthrough.max_distance set value 2
-data modify storage emissive:config passthrough.do_shapes set value true
+execute store result score *config.passthrough.max_distance _emissive run data get storage emissive:config passthrough.max_distance
