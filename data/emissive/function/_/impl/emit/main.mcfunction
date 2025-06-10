@@ -10,8 +10,8 @@ execute as @s[tag=!_emissive.initialized] run function emissive:_/impl/emit/init
 
 scoreboard players operation *emit.id _emissive = @s _emissive.id
 
-# tp proxy
-execute unless entity @s[distance=0..0.1] as @e[type=marker,tag=_emissive.proxy] if score @s _emissive.id = *emit.id _emissive run tp @s ~ ~ ~
+# summon proxy
+execute summon marker run function emissive:_/impl/emit/proxy
 
 scoreboard players reset *emit.ignore _emissive
 execute as @n[type=marker,tag=_emissive.source,distance=0..0.1] run return run function emissive:_/impl/emit/existing

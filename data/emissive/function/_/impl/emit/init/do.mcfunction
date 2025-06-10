@@ -6,5 +6,4 @@
 
 scoreboard players add *max_id _emissive 1
 scoreboard players operation @s _emissive.id = *max_id _emissive
-
-execute summon marker run function emissive:_/impl/emit/init/proxy
+tag @s add _emissive.initialized

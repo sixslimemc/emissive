@@ -1,6 +1,7 @@
 # IMPL > emissive:emit
 # create_source
-# % AS AT [emit source]
+# % AS [emit source]
+# % AT [emit location]
 #--------------------
 # ./main
 #--------------------

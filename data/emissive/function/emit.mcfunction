@@ -1,5 +1,6 @@
 #> emissive : emit
-# % AS AT [emit source]
+# % AS [source]
+# % AT [location]
 #--------------------
 # .
 #--------------------
