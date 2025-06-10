@@ -1,4 +1,4 @@
-#> emissive:_/light/emit/setblock
+#> emissive:_/light/emit/setblock.m2
 #--------------------
 # ./trigger
 #--------------------
