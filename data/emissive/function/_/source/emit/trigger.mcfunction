@@ -12,4 +12,4 @@ execute if score *x _emissive matches 1 run return run function emissive:_/light
 
 # (it should already be true that this block is a valid source block, thus should passthrough)
 
-#execute if score *cc.passthrough.max_distance _emissive matches 1.. run function emissive:_/light/passthrough/trigger
+execute if score *cc.passthrough.max_distance _emissive matches 1.. run function emissive:_/light/passthrough/trigger
