@@ -12,6 +12,6 @@ function emissive:_/light/passthrough/new/branch
 
 tag @s add _emissive.ptchecked
 function emissive:_/light/passthrough/loop
-tag @s remove _emissive.pt_checked
+tag @s remove _emissive.ptchecked
 
 kill @e[type=marker,distance=..16,tag=_emissive.pt]
