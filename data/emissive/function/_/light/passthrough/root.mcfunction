@@ -4,7 +4,6 @@
 # 
 #--------------------
 
-
 execute if entity @n[type=marker,distance=..0.1,tag=_emissive.ptchecked] run return run kill @s
 tag @s add _emissive.ptchecked
 tag @s remove _emissive.ptroot

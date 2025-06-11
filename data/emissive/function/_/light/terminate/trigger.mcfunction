@@ -14,5 +14,4 @@ execute if score *x _emissive matches 1 run return run kill @s
 
 execute if block ~ ~ ~ minecraft:light[waterlogged=true] run setblock ~ ~ ~ water[level=0]
 execute if block ~ ~ ~ minecraft:light[waterlogged=false] run setblock ~ ~ ~ air
-particle flame ~ ~ ~ 0 0 0 0 1
 kill @s
