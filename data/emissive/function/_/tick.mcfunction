@@ -3,6 +3,5 @@
 # @tick
 #--------------------
 schedule function emissive:_/tick 1t
-execute as @e[type=marker,tag=_emissive.source] at @s run function emissive:_/source/main
 
-kill @e[type=marker, tag=_emissive.proxy]
+execute as @e[type=marker,tag=_emissive.tick] at @s run function emissive:_/marker_tick

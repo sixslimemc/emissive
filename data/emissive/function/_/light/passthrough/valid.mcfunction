@@ -4,6 +4,7 @@
 # ./root
 #--------------------
 
+scoreboard players operation @s _emissive.emitting = *pt.level _emissive
 function emissive:_/light/emit/trigger
 tag @s add _emissive.ptvalid
 

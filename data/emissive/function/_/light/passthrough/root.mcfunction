@@ -20,4 +20,4 @@ execute if score *pt.depth _emissive matches ..0 run return 0
 # scoreboard players operation *pt.newdepth _emissive = @s _emissive.ptdepth
 # scoreboard players remove *pt.newdepth _emissive 1
 
-function emissive:_/light/passthrough/new/check
+function emissive:_/light/passthrough/new/branch

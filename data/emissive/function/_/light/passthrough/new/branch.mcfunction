@@ -1,4 +1,4 @@
-#> emissive:_/light/passthrough/new/check
+#> emissive:_/light/passthrough/new/branch
 #--------------------
 # ../root
 #--------------------
