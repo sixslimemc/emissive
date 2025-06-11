@@ -1,6 +1,8 @@
 #> emissive:_/light/terminate/trigger
 #--------------------
-# ../main
+# ../emit/trigger
+# ../ptmain
+# _/source/terminate/trigger
 #--------------------
 
 scoreboard players set *x _emissive 0
