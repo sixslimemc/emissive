@@ -50,6 +50,8 @@
         "minecraft:trapped_chest",
         "minecraft:chest",
         "minecraft:decorated_pot",
+        "#minecraft:cauldrons",
+        "minecraft:composter",
         "minecraft:flower_pot",
         "minecraft:lightning_rod",
         "minecraft:scaffolding",
