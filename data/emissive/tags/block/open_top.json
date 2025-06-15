@@ -1,8 +1,12 @@
 {
     "values": [
         "#minecraft:cauldrons",
-        "minecraft:daylight_detector",
+        "minecraft:composter",
+        "minecraft:sculk_sensor",
+        "minecraft:lectern",
+        "minecraft:enchanting_table",
         "minecraft:stonecutter",
-        "minecraft:enchanting_table"
+        "minecraft:daylight_detector",
+        "minecraft:sculk_shrieker"
     ]
 }
