@@ -11,6 +11,9 @@ execute as @s[tag=!_emissive.initialized] run function emissive:_/impl/emit/init
 scoreboard players operation *emit.id _emissive = @s _emissive.id
 
 # find existing source
-execute as @e[type=marker,tag=_emissive.source, sort=nearest] if score @s _emissive.id = *emit.id _emissive run return run function emissive:_/impl/emit/existing
+execute store result storage emissive:_ x.id int 1 run scoreboard players get *emit.id _emissive
+execute store result score *x _emissive run function emissive:_/impl/emit/find_existing with storage emissive:_ x
+execute if score *x _emissive matches 1 run return 0
+
 # summon source if not present
 execute summon marker run function emissive:_/impl/emit/new
