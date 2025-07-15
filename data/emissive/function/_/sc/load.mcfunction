@@ -9,6 +9,7 @@ scoreboard objectives add _emissive dummy
 scoreboard objectives add _emissive.emitting dummy
 scoreboard objectives add _emissive.id dummy
 scoreboard objectives add _emissive.ptdepth dummy
+scoreboard objectives add _emissive.keepalive dummy
 
 # > execute store result score @s _emissive.self run scoreboard players add *self _emissive 1
 scoreboard objectives add _emissive.self dummy

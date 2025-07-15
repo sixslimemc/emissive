@@ -1,12 +1,16 @@
 # IMPL > emissive:emit
 # existing
 #--------------------
-# ./main AS AT [emit source]
+# ./main AS [emit source] AT [new emit location]
 #--------------------
 
-execute if score @s _emissive.emitting >= *emit.level _emissive unless score @s _emissive.id = *emit.id _emissive run return 0
+scoreboard players set *x _emissive 0
+execute if score @s _emissive.emitting = *emit.level _emissive if entity @s[distance=0..0.1] run scoreboard players set *x _emissive 1
 
-scoreboard players operation @s _emissive.id = *emit.id _emissive
+tp @s ~ ~ ~
 scoreboard players operation @s _emissive.emitting = *emit.level _emissive
+execute if score *x _emissive matches 1 run return 1
 
-function emissive:_/source/emit/trigger
+function emissive:_/impl/emit/try_emit
+
+return 1
