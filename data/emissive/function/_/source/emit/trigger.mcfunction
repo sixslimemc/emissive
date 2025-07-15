@@ -5,7 +5,6 @@
 # _/impl/emit/new
 #--------------------
 
-particle flame ~0.5 ~0.5 ~0.5 0 0 0 0.05 1
 execute if score @s _emissive.emitting matches ..0 run return run function emissive:_/source/terminate/trigger
 
 execute store result score *x _emissive run function emissive:_/light/check_valid_block

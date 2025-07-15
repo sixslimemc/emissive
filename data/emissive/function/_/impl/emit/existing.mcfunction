@@ -4,6 +4,8 @@
 # ./main AS [emit source] AT [new emit location]
 #--------------------
 
+execute unless entity @s[distance=0..0.1] at @s run function emissive:_/impl/emit/clear_old
+
 scoreboard players set *x _emissive 0
 execute if score @s _emissive.emitting = *emit.level _emissive if entity @s[distance=0..0.1] run scoreboard players set *x _emissive 1
 
