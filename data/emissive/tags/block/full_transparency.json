@@ -131,6 +131,7 @@
         "minecraft:water",
         "minecraft:lava",
         "minecraft:fire",
-        "minecraft:frosted_ice"
+        "minecraft:frosted_ice",
+        "minecraft:glass"
     ]
 }
