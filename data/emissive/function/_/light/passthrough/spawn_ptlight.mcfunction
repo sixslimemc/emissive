@@ -8,5 +8,5 @@ tag @s add _emissive.light
 tag @s add _emissive.ptlight
 scoreboard players operation @s _emissive.id = *pt.id _emissive
 scoreboard players operation @s _emissive.emitting = *pt.level _emissive
-
+scoreboard players set @s _emissive.keepalive 1
 function emissive:_/light/emit/trigger

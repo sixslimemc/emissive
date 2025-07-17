@@ -3,8 +3,15 @@
         max_distance: int
             = 2
             #
+
         do_shapes: bool
             = true
-            # whether not light passthrough accounts for block shapes like stair/slab direction to emulate real behavior.
+            # Whether not light passthrough accounts for block shapes like stair/slab direction to emulate real behavior.
+
+        recheck_interval: int
+            = 10
+            # Interval (in ticks) that passthrough is re-checked.
+            # Rechecking ensures that unmoving light sources update their passthrough when blocks around them change.
+            # If set to 0, no rechecking will occur (only recommended for controlled environments).
     }
 }

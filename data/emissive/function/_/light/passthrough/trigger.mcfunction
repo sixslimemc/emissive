@@ -4,6 +4,8 @@
 # _/source/emit/trigger
 #--------------------
 
+execute unless score *cc.passthrough.recheck_interval _emissive matches ..0 run scoreboard players operation @s _emissive.ptrecheck = *cc.passthrough.recheck_interval _emissive
+
 scoreboard players operation *pt.depth _emissive = *cc.passthrough.max_distance _emissive
 scoreboard players operation *pt.id _emissive = @s _emissive.id
 scoreboard players operation *pt.level _emissive = @s _emissive.emitting
