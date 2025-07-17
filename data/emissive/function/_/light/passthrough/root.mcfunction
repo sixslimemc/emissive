@@ -12,7 +12,8 @@ execute unless block ~ ~ ~ #emissive:_/valid_sources run return 0
 
 execute if entity @n[type=marker,distance=0.9..1.1,tag=_emissive.ptvalid] run return 0
 
-execute if function emissive:_/light/check_valid_block run return run function emissive:_/light/passthrough/valid
+execute store result storage emissive:_ x.id int 1 run scoreboard players get *pt.id _emissive
+execute if function emissive:_/light/check_valid_block run return run function emissive:_/light/passthrough/valid with storage emissive:_ x
 
 execute if score *pt.depth _emissive matches ..0 run return 0
 # execute if score @s _emissive.ptdepth matches ..0 run return 0
