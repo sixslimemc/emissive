@@ -2,7 +2,7 @@
 # main
 
 execute unless score @s emissive.level matches 0..15 run return 0
-execute unless block ~ ~ ~ #emissive:_/valid_sources run return 0
+execute unless block ~ ~ ~ #emissive:_/valid_sources run return run execute if entity @s[tag=_emissive.initialized] run function emissive:_/impl/emit/init/deinit
 
 scoreboard players operation *emit.level _emissive = @s emissive.level
 
