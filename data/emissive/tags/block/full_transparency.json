@@ -133,6 +133,7 @@
         "minecraft:fire",
         "minecraft:frosted_ice",
         "minecraft:glass",
-        "minecraft:glass_pane"
+        "minecraft:glass_pane",
+        "minecraft:bubble_column"
     ]
 }
