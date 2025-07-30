@@ -5,6 +5,7 @@
         "minecraft:enchanting_table",
         "minecraft:stonecutter",
         "minecraft:daylight_detector",
-        "minecraft:sculk_shrieker"
+        "minecraft:sculk_shrieker",
+        "minecraft:soul_sand"
     ]
 }

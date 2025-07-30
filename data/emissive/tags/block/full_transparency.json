@@ -134,7 +134,6 @@
         "minecraft:frosted_ice",
         "minecraft:glass",
         "minecraft:glass_pane",
-        "minecraft:bubble_column",
-        "minecraft:nether_wart"
+        "minecraft:bubble_column"
     ]
 }
